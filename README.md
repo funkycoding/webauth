@@ -36,22 +36,6 @@ For authentication use the `auth` method:
       * NTLM
       * Basic
 
-  ````
-  {
-      username : 'Churkin.Andrey',  // required field 
-      password : 'myPass$1',        // required field
-      domain : 'CORP',              // is used in the NTLM auth
-      workstation: 'CHURKIN-LINUX', // is used in the NTLM auth
-  }
-  ````
-
-  * `callback` - The function that will be called after the authentication;
-  * `isHttps` - Set `true` to use https protocol (`false` by default);
-  * `res` - An optional parameter that you need to pass to the method if you have already received a response from the server with the 401 error;
-  * `method` - The authentication type to be used. The possible values are: `NTLM`, `Basic`. If this value is not specified, it will be automatically selected based on the following priorities:
-      * NTLM
-      * Basic
-
 ## Example
 
 ````
