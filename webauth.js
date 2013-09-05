@@ -1,17 +1,3 @@
-/*
-    Authentication methods priority:
-        - NTLM
-        - BASIC
-
-    The 'credentials' obj struct:
-        {
-            username : 'Churkin.Andrey',  // required field
-            password : 'myPass$1',        // required field
-            domain : 'CORP',              // uses in the ntlm auth
-            workstation: 'CHURKIN-LINUX', // uses in the ntlm auth
-        }
- */
-
 var basic = require('./lib/basic'),
 	http = require('http'),
 	https = require('https'),
@@ -19,7 +5,7 @@ var basic = require('./lib/basic'),
 	
 // Consts
 var AUTH_BASIC = exports.AUTH_BASIC = 'Basic',
-    AUTH_NTLM = exports.AUTH_NTLM = 'NTLM';
+	AUTH_NTLM = exports.AUTH_NTLM = 'NTLM';
 
 var authMethods = {};
 
