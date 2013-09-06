@@ -25,7 +25,7 @@ For authentication use the `auth` method:
       username : 'Churkin.Andrey',  // required field 
       password : 'myPass$1',        // required field
       domain : 'CORP',              // is used in the NTLM auth
-      workstation: 'CHURKIN-LINUX', // is used in the NTLM auth
+      workstation: 'CHURKIN-LINUX' // is used in the NTLM auth
   }
   ````
 
