@@ -17,7 +17,7 @@ To authenticate the request to the server, use the `auth` method:
 
 `auth(reqOptions, credentials, callback, [isHttps=false], [res], [method])`
 
-  * `reqOptions` - The request options object uses signature identical to the [Node.js http/https request options](http://nodejs.org/api/http.html#http_http_request_options_callback);
+  * `reqOptions` - The request options object uses a signature identical to the [Node.js http/https request options](http://nodejs.org/api/http.html#http_http_request_options_callback);
   * `credentials` - The object to which authentication parameters are passed:
 
   ````
